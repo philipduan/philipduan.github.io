@@ -44,6 +44,8 @@ node_modules/
 # Folder #
 ######################
 src/
+dest/
+!dest/build.min.css
 
 # File #
 ######################
