@@ -1,0 +1,13 @@
+.line1{
+    @include section-line(1, 519, 3072);
+}
+
+
+.line2{
+    @include section-line(2, 318, 3072);
+}
+
+
+.line3{
+    @include section-line(3, 519, 3072);
+}

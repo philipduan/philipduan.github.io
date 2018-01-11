@@ -1,0 +1,46 @@
+html{
+    color: $text-color;
+    font-family: Quicksand;
+    font-size: 14px;
+    @include tablet{
+        font-size: 18px;
+    }
+}
+
+body{
+    background-color: #272822;
+}
+
+h2{
+    @include top-text(18px,0.3em);
+    opacity: 0.7;
+    text-align: center;
+    @include tablet{
+        @include top-text(28px,0.3em);
+    }
+
+}
+
+a:not([name="menu"]){
+    color: $anchor-color;
+    font-family: Quicksand;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.big{
+    font-size: 18px;
+    text-align: center;
+}
+
+.menu{
+    li{
+        a{
+            @include top-text(16px,0.1em);
+            @include tablet{
+                @include top-text(18px,0.1em);
+            }
+        }
+    }
+}
+

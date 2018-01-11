@@ -1,0 +1,78 @@
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin top-text($size,$gap) {
+  font-family: Asap;
+  font-size: $size;
+  letter-spacing: $gap;
+  text-transform: uppercase;
+}
+
+
+@mixin skill-grid($name, $area) {
+  grid-area: $area;
+  .img {
+    background: url("../../assets/images/"+ $name +".png") center no-repeat;
+    background-size: contain;
+    height: 75%;
+    margin: 0 auto;
+    width: 75%;
+  }
+  p {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+@mixin section-line($number, $height, $width) {
+  background: url("../../assets/images/Lines"+ $number +"@3x.png") center
+    no-repeat;
+  background-size: 100% 100%;
+  height: 0;
+  margin: 20px 0;
+  padding-top: percentage($height / $width);
+  width: 100%;
+}
+
+@mixin work-project($name,$height,$width) {
+  margin: 50px auto;
+
+  .img {
+    background: url('../../assets/images/' + $name + '@3x.png') center no-repeat;
+    background-size: contain;
+    height: 0;
+    padding-top: percentage($height / $width);
+    width: 100%;
+  }
+
+  p {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .source{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    height: 35px;
+    justify-content: space-around;
+
+  }
+}
+
+@mixin footer-grid($name, $height, $width){
+  background: url('../../assets/images/' + $name + '@3x.png') center no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: $height;
+  width: $width;
+}
