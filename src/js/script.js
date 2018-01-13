@@ -47,7 +47,10 @@ $(document).ready(function() {
       $('#menu_work').addClass('selected');
     }
 
-    if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+    if (
+      $(window).scrollTop() + $(window).height() >
+      $(document).height() - 150
+    ) {
       $('.menu > li').removeClass('selected');
       $('#menu_contact').addClass('selected');
     }
