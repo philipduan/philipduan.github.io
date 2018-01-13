@@ -46,5 +46,10 @@ $(document).ready(function() {
       $('.menu > li').removeClass('selected');
       $('#menu_work').addClass('selected');
     }
+
+    if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+      $('.menu > li').removeClass('selected');
+      $('#menu_contact').addClass('selected');
+    }
   });
 });

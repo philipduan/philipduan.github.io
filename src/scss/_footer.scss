@@ -1,35 +1,35 @@
-footer{
-    h2{
-        margin-bottom: 20px;
-    }
-    .grid{
-        display: grid;
-        grid-column-gap: 10px;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        height: 70px;
-        margin: 0 auto;
-        margin-bottom: 50px;
-        width: 90vw;
+footer {
+  h2 {
+    margin-bottom: 50px;
+  }
+  .grid {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 90vw;
 
-        .email{
-            @include footer-grid('Email',80%,80%);
-            align-self: end;
-            justify-self: center;
-        }
-
-        .github{
-            @include footer-grid('Github',100%,100%);
-        }
-
-        .linkedin{
-            @include footer-grid('Linkedin',100%,100%);
-        }
+    .email {
+      @include footer-grid('Email',80%,80%);
+      align-self: end;
+      justify-self: center;
     }
 
-    @include tablet{
-        .grid{
-            width: 50vw;
-        }
+    .github {
+      @include footer-grid('Github',100%,100%);
     }
+
+    .linkedin {
+      @include footer-grid('Linkedin',100%,100%);
+    }
+  }
+
+  @include tablet {
+    .grid {
+      width: 50vw;
+    }
+  }
 }

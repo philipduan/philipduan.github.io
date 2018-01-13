@@ -43,6 +43,10 @@ a {
 .big {
   font-size: 18px;
   text-align: center;
+
+  @include tablet {
+    font-size: 24px;
+  }
 }
 
 .menu {

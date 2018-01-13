@@ -1,34 +1,31 @@
-.work{
-    margin: 0 auto;
-    width:90%;
-    h2{
-        margin-bottom: 15px;
-    }
+.work {
+  margin: 50px auto;
+  width: 90%;
+  h2 {
+    margin-bottom: 50px;
+  }
 
-    .mars{
-        @include work-project('MarsMockup',1059 ,1707 );
-        margin-top: 20px;
-    }
+  .mars {
+    @include work-project('MarsMockup',1059 ,1707 );
+  }
 
-    .aloha{
-        @include work-project('AlohaMockup',954 ,1731 );
-    }
+  .aloha {
+    @include work-project('AlohaMockup',954 ,1731 );
+  }
 
-    .bestbuy{
-        @include work-project('BestBuyMockup',1044 ,1686 );
-    }
+  .bestbuy {
+    @include work-project('BestBuyMockup',1044 ,1686 );
+  }
 
-    .littlepaper{
-        @include work-project('LittlePaperMockup',1077 ,1764 );
-        margin-bottom: 0;
-    }
+  .littlepaper {
+    @include work-project('LittlePaperMockup',1077 ,1764 );
+  }
 
-    @include tablet{
-        width: 3/5*100+vw;
-    }
+  @include tablet {
+    width: 3/5*100+vw;
+  }
 
-    @include desktop{
-        width: 3/7*100+vw;
-    }
-
+  @include desktop {
+    width: 3/7*100+vw;
+  }
 }

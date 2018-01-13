@@ -101,6 +101,9 @@ a {
 .big {
   font-size: 18px;
   text-align: center; }
+  @media (min-width: 600px) {
+    .big {
+      font-size: 24px; } }
 
 .menu li a {
   font-family: Asap;
@@ -118,7 +121,7 @@ a {
   background: url("../../assets/images/Lines1@3x.png") center no-repeat;
   background-size: 100% 100%;
   height: 0;
-  margin: 20px 0;
+  margin: 80px 0;
   padding-top: 16.89453%;
   width: 100%; }
 
@@ -126,7 +129,7 @@ a {
   background: url("../../assets/images/Lines2@3x.png") center no-repeat;
   background-size: 100% 100%;
   height: 0;
-  margin: 20px 0;
+  margin: 80px 0;
   padding-top: 10.35156%;
   width: 100%; }
 
@@ -134,7 +137,7 @@ a {
   background: url("../../assets/images/Lines3@3x.png") center no-repeat;
   background-size: 100% 100%;
   height: 0;
-  margin: 20px 0;
+  margin: 80px 0;
   padding-top: 16.89453%;
   width: 100%; }
 
@@ -158,6 +161,7 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-color: #272822;
     display: grid;
     grid-area: menu;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -180,8 +184,12 @@ header {
           -ms-flex-pack: center;
               justify-content: center;
       width: 20vw; }
+    @media (min-width: 600px) {
+      .sub_title .menu {
+        background-color: unset; } }
   .sub_title .sticky_header {
-    top: 0; }
+    top: 0;
+    z-index: 1000; }
   .sub_title .about_me {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -225,138 +233,138 @@ header {
         -ms-flex-item-align: center;
             align-self: center; } }
 
-.skills h2 {
-  margin-bottom: 15px; }
-
-.skills .skills-grid {
-  display: grid;
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
-  grid-template-areas: "html css js" "react wp jquery" "git bootstrap gulp";
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  height: 90vw;
-  margin: 0px auto;
-  width: 90%; }
-  .skills .skills-grid .html {
-    grid-area: html; }
-    .skills .skills-grid .html .img {
-      background: url("../../assets/images/HTML@3x.png") center no-repeat;
-      background-size: contain;
-      height: 75%;
-      margin: 0 auto;
-      width: 75%; }
-    .skills .skills-grid .html p {
-      text-align: center;
-      margin-top: 10px; }
-  .skills .skills-grid .css {
-    grid-area: css; }
-    .skills .skills-grid .css .img {
-      background: url("../../assets/images/CSS@3x.png") center no-repeat;
-      background-size: contain;
-      height: 75%;
-      margin: 0 auto;
-      width: 75%; }
-    .skills .skills-grid .css p {
-      text-align: center;
-      margin-top: 10px; }
-  .skills .skills-grid .js {
-    grid-area: js; }
-    .skills .skills-grid .js .img {
-      background: url("../../assets/images/Javascript@3x.png") center no-repeat;
-      background-size: contain;
-      height: 75%;
-      margin: 0 auto;
-      width: 75%; }
-    .skills .skills-grid .js p {
-      text-align: center;
-      margin-top: 10px; }
-  .skills .skills-grid .react {
-    grid-area: react; }
-    .skills .skills-grid .react .img {
-      background: url("../../assets/images/React@3x.png") center no-repeat;
-      background-size: contain;
-      height: 75%;
-      margin: 0 auto;
-      width: 75%; }
-    .skills .skills-grid .react p {
-      text-align: center;
-      margin-top: 10px; }
-  .skills .skills-grid .wp {
-    grid-area: wp; }
-    .skills .skills-grid .wp .img {
-      background: url("../../assets/images/Wordpress@3x.png") center no-repeat;
-      background-size: contain;
-      height: 75%;
-      margin: 0 auto;
-      width: 75%; }
-    .skills .skills-grid .wp p {
-      text-align: center;
-      margin-top: 10px; }
-  .skills .skills-grid .jquery {
-    grid-area: jquery; }
-    .skills .skills-grid .jquery .img {
-      background: url("../../assets/images/JQuery@3x.png") center no-repeat;
-      background-size: contain;
-      height: 75%;
-      margin: 0 auto;
-      width: 75%; }
-    .skills .skills-grid .jquery p {
-      text-align: center;
-      margin-top: 10px; }
-  .skills .skills-grid .git {
-    grid-area: git; }
-    .skills .skills-grid .git .img {
-      background: url("../../assets/images/Git@3x.png") center no-repeat;
-      background-size: contain;
-      height: 75%;
-      margin: 0 auto;
-      width: 75%; }
-    .skills .skills-grid .git p {
-      text-align: center;
-      margin-top: 10px; }
-  .skills .skills-grid .bootstrap {
-    grid-area: bootstrap; }
-    .skills .skills-grid .bootstrap .img {
-      background: url("../../assets/images/Bootstrap@3x.png") center no-repeat;
-      background-size: contain;
-      height: 75%;
-      margin: 0 auto;
-      width: 75%; }
-    .skills .skills-grid .bootstrap p {
-      text-align: center;
-      margin-top: 10px; }
-  .skills .skills-grid .gulp {
-    grid-area: gulp; }
-    .skills .skills-grid .gulp .img {
-      background: url("../../assets/images/Gulp@3x.png") center no-repeat;
-      background-size: contain;
-      height: 75%;
-      margin: 0 auto;
-      width: 75%; }
-    .skills .skills-grid .gulp p {
-      text-align: center;
-      margin-top: 10px; }
-  @media (min-width: 600px) {
-    .skills .skills-grid {
-      grid-template-areas: "free html css js free1" "free react wp jquery free1" "free git bootstrap gulp free1";
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      height: 60vw;
-      width: 100%; } }
-  @media (min-width: 1000px) {
-    .skills .skills-grid {
-      grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
-      height: 42.85714vw; } }
+.skills {
+  margin: 50px 0; }
+  .skills h2 {
+    margin-bottom: 50px; }
+  .skills .skills-grid {
+    display: grid;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    grid-template-areas: 'html css js' 'react wp jquery' 'git bootstrap gulp';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 90vw;
+    margin: 0px auto;
+    width: 90%; }
+    .skills .skills-grid .html {
+      grid-area: html; }
+      .skills .skills-grid .html .img {
+        background: url("../../assets/images/HTML@3x.png") center no-repeat;
+        background-size: contain;
+        height: 75%;
+        margin: 0 auto;
+        width: 75%; }
+      .skills .skills-grid .html p {
+        text-align: center;
+        margin-top: 10px; }
+    .skills .skills-grid .css {
+      grid-area: css; }
+      .skills .skills-grid .css .img {
+        background: url("../../assets/images/CSS@3x.png") center no-repeat;
+        background-size: contain;
+        height: 75%;
+        margin: 0 auto;
+        width: 75%; }
+      .skills .skills-grid .css p {
+        text-align: center;
+        margin-top: 10px; }
+    .skills .skills-grid .js {
+      grid-area: js; }
+      .skills .skills-grid .js .img {
+        background: url("../../assets/images/Javascript@3x.png") center no-repeat;
+        background-size: contain;
+        height: 75%;
+        margin: 0 auto;
+        width: 75%; }
+      .skills .skills-grid .js p {
+        text-align: center;
+        margin-top: 10px; }
+    .skills .skills-grid .react {
+      grid-area: react; }
+      .skills .skills-grid .react .img {
+        background: url("../../assets/images/React@3x.png") center no-repeat;
+        background-size: contain;
+        height: 75%;
+        margin: 0 auto;
+        width: 75%; }
+      .skills .skills-grid .react p {
+        text-align: center;
+        margin-top: 10px; }
+    .skills .skills-grid .wp {
+      grid-area: wp; }
+      .skills .skills-grid .wp .img {
+        background: url("../../assets/images/Wordpress@3x.png") center no-repeat;
+        background-size: contain;
+        height: 75%;
+        margin: 0 auto;
+        width: 75%; }
+      .skills .skills-grid .wp p {
+        text-align: center;
+        margin-top: 10px; }
+    .skills .skills-grid .jquery {
+      grid-area: jquery; }
+      .skills .skills-grid .jquery .img {
+        background: url("../../assets/images/JQuery@3x.png") center no-repeat;
+        background-size: contain;
+        height: 75%;
+        margin: 0 auto;
+        width: 75%; }
+      .skills .skills-grid .jquery p {
+        text-align: center;
+        margin-top: 10px; }
+    .skills .skills-grid .git {
+      grid-area: git; }
+      .skills .skills-grid .git .img {
+        background: url("../../assets/images/Git@3x.png") center no-repeat;
+        background-size: contain;
+        height: 75%;
+        margin: 0 auto;
+        width: 75%; }
+      .skills .skills-grid .git p {
+        text-align: center;
+        margin-top: 10px; }
+    .skills .skills-grid .bootstrap {
+      grid-area: bootstrap; }
+      .skills .skills-grid .bootstrap .img {
+        background: url("../../assets/images/Bootstrap@3x.png") center no-repeat;
+        background-size: contain;
+        height: 75%;
+        margin: 0 auto;
+        width: 75%; }
+      .skills .skills-grid .bootstrap p {
+        text-align: center;
+        margin-top: 10px; }
+    .skills .skills-grid .gulp {
+      grid-area: gulp; }
+      .skills .skills-grid .gulp .img {
+        background: url("../../assets/images/Gulp@3x.png") center no-repeat;
+        background-size: contain;
+        height: 75%;
+        margin: 0 auto;
+        width: 75%; }
+      .skills .skills-grid .gulp p {
+        text-align: center;
+        margin-top: 10px; }
+    @media (min-width: 600px) {
+      .skills .skills-grid {
+        grid-template-areas: 'free html css js free1' 'free react wp jquery free1' 'free git bootstrap gulp free1';
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 60vw;
+        width: 100%; } }
+    @media (min-width: 1000px) {
+      .skills .skills-grid {
+        grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+        height: 42.85714vw; } }
 
 .work {
-  margin: 0 auto;
+  margin: 50px auto;
   width: 90%; }
   .work h2 {
-    margin-bottom: 15px; }
+    margin-bottom: 50px; }
   .work .mars {
-    margin: 50px auto;
-    margin-top: 20px; }
+    margin: 0 auto 80px auto; }
     .work .mars .img {
       background: url("../../assets/images/MarsMockup@3x.png") center no-repeat;
       background-size: contain;
@@ -381,7 +389,7 @@ header {
       -ms-flex-pack: distribute;
           justify-content: space-around; }
   .work .aloha {
-    margin: 50px auto; }
+    margin: 0 auto 80px auto; }
     .work .aloha .img {
       background: url("../../assets/images/AlohaMockup@3x.png") center no-repeat;
       background-size: contain;
@@ -406,7 +414,7 @@ header {
       -ms-flex-pack: distribute;
           justify-content: space-around; }
   .work .bestbuy {
-    margin: 50px auto; }
+    margin: 0 auto 80px auto; }
     .work .bestbuy .img {
       background: url("../../assets/images/BestBuyMockup@3x.png") center no-repeat;
       background-size: contain;
@@ -431,8 +439,7 @@ header {
       -ms-flex-pack: distribute;
           justify-content: space-around; }
   .work .littlepaper {
-    margin: 50px auto;
-    margin-bottom: 0; }
+    margin: 0 auto 80px auto; }
     .work .littlepaper .img {
       background: url("../../assets/images/LittlePaperMockup@3x.png") center no-repeat;
       background-size: contain;
@@ -464,14 +471,14 @@ header {
       width: 42.85714vw; } }
 
 footer h2 {
-  margin-bottom: 20px; }
+  margin-bottom: 50px; }
 
 footer .grid {
   display: grid;
   grid-column-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  height: 70px;
+  height: 50px;
   margin: 0 auto;
   margin-bottom: 50px;
   width: 90vw; }

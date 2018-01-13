@@ -20,6 +20,7 @@ header {
 
   .menu {
     align-items: center;
+    background-color: #272822;
     display: grid;
     grid-area: menu;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -38,9 +39,13 @@ header {
       justify-content: center;
       width: 20vw;
     }
+    @include tablet {
+      background-color: unset;
+    }
   }
   .sticky_header {
     top: 0;
+    z-index: 1000;
   }
 
   .about_me {
