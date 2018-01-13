@@ -9,12 +9,12 @@ header {
 
 .sub_title {
   display: grid;
-  grid-row-gap: 20px;
+  grid-row-gap: 40px;
   grid-template-rows: 1fr 4fr;
   grid-template-areas:
     'menu'
     'text';
-  height: 160px;
+  height: 180px;
   margin: 0 auto;
   width: 90%;
 
