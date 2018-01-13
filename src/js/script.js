@@ -1,23 +1,50 @@
-$(document).ready(function(){
+$(document).ready(function() {
+  $('.menu').on('click', 'a[href^="#"]', function(event) {
+    $(this)
+      .parent()
+      .siblings()
+      .removeClass('selected');
+    $(this)
+      .parent()
+      .addClass('selected');
+    event.preventDefault();
+    var $target = $(this.hash);
+    $('html,body').animate(
+      {
+        scrollTop: $target.offset().top - 15
+      },
+      600
+    );
+  });
 
-    /* $(window).resize(function(){
-        if( $(window).width() >= 600 ){
-            var screenWidth = $(window).width();
-            $('.menu').css({'width':screenWidth/5});
-            $('.skills-grid').css({'height':screenWidth/5*3});
-            $('.work').css({'width':screenWidth/5*3});
-        } else{
-            $('.menu').css({'width': '100%'});
-            $('.skills-grid').css({'height':screenWidth*0.9});
-            $('.work').css({'width':'90%'});
-        }
-    }); */
+  $(window).resize(function() {
+    if ($(window).width() > 600) {
+      $('.menu').removeClass('sticky_header');
+    }
+  });
 
-    $('.menu').on('click', 'a[href^="#"]', function (event) {
-        event.preventDefault();
-        var $target = $(this.hash);
-        $('html,body').animate({
-            scrollTop: $target.offset().top - 15
-        }, 600);
-    });
+  $(window).scroll(function() {
+    if ($(window).width() < 600) {
+      if ($(document).scrollTop() > 50) {
+        $('.menu').addClass('sticky_header');
+      } else {
+        $('.menu').removeClass('sticky_header');
+      }
+    }
+
+    if ($(document).scrollTop() > $('#about_me').position().top - 40) {
+      $('.menu > li').removeClass('selected');
+      $('#menu_about_me').addClass('selected');
+    }
+
+    if ($(document).scrollTop() > $('#skills').position().top - 40) {
+      $('.menu > li').removeClass('selected');
+      $('#menu_skills').addClass('selected');
+    }
+
+    if ($(document).scrollTop() > $('#work').position().top - 40) {
+      $('.menu > li').removeClass('selected');
+      $('#menu_work').addClass('selected');
+    }
+  });
 });
