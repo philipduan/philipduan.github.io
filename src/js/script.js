@@ -25,7 +25,7 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     if ($(window).width() < 600) {
-      if ($(document).scrollTop() > 50) {
+      if ($(document).scrollTop() > $('.menu').position().top) {
         $('.menu').addClass('sticky_header');
       } else {
         $('.menu').removeClass('sticky_header');

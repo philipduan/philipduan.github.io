@@ -16,8 +16,11 @@ header {
     'text';
   height: 180px;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
 
+  .menuWrapper {
+    height: 40px;
+  }
   .menu {
     align-items: center;
     background-color: #272822;
@@ -25,8 +28,9 @@ header {
     grid-area: menu;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
-    position: fixed;
-    width: 90%;
+    margin: 0 auto;
+    transition: all 1s ease;
+    width: 100%;
     li a {
       color: inherit;
       text-decoration: none;
@@ -44,6 +48,7 @@ header {
     }
   }
   .sticky_header {
+    position: fixed;
     top: 0;
     z-index: 1000;
   }
