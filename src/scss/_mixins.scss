@@ -20,11 +20,11 @@
 @mixin skill-grid($name, $area) {
   grid-area: $area;
   .img {
-    background: url('../../assets/images/'+ $name +'.png') center no-repeat;
+    background: url('../../assets/images/'+ $name +'@3x.png') center no-repeat;
     background-size: contain;
-    height: 75%;
+    height: 65%;
     margin: 0 auto;
-    width: 75%;
+    width: 65%;
   }
   p {
     text-align: center;

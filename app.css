@@ -257,9 +257,9 @@ header {
       .skills .skills-grid .html .img {
         background: url("../../assets/images/HTML@3x.png") center no-repeat;
         background-size: contain;
-        height: 75%;
+        height: 65%;
         margin: 0 auto;
-        width: 75%; }
+        width: 65%; }
       .skills .skills-grid .html p {
         text-align: center;
         margin-top: 10px; }
@@ -268,9 +268,9 @@ header {
       .skills .skills-grid .css .img {
         background: url("../../assets/images/CSS@3x.png") center no-repeat;
         background-size: contain;
-        height: 75%;
+        height: 65%;
         margin: 0 auto;
-        width: 75%; }
+        width: 65%; }
       .skills .skills-grid .css p {
         text-align: center;
         margin-top: 10px; }
@@ -279,9 +279,9 @@ header {
       .skills .skills-grid .js .img {
         background: url("../../assets/images/Javascript@3x.png") center no-repeat;
         background-size: contain;
-        height: 75%;
+        height: 65%;
         margin: 0 auto;
-        width: 75%; }
+        width: 65%; }
       .skills .skills-grid .js p {
         text-align: center;
         margin-top: 10px; }
@@ -290,9 +290,9 @@ header {
       .skills .skills-grid .react .img {
         background: url("../../assets/images/React@3x.png") center no-repeat;
         background-size: contain;
-        height: 75%;
+        height: 65%;
         margin: 0 auto;
-        width: 75%; }
+        width: 65%; }
       .skills .skills-grid .react p {
         text-align: center;
         margin-top: 10px; }
@@ -301,9 +301,9 @@ header {
       .skills .skills-grid .wp .img {
         background: url("../../assets/images/Wordpress@3x.png") center no-repeat;
         background-size: contain;
-        height: 75%;
+        height: 65%;
         margin: 0 auto;
-        width: 75%; }
+        width: 65%; }
       .skills .skills-grid .wp p {
         text-align: center;
         margin-top: 10px; }
@@ -312,9 +312,9 @@ header {
       .skills .skills-grid .jquery .img {
         background: url("../../assets/images/JQuery@3x.png") center no-repeat;
         background-size: contain;
-        height: 75%;
+        height: 65%;
         margin: 0 auto;
-        width: 75%; }
+        width: 65%; }
       .skills .skills-grid .jquery p {
         text-align: center;
         margin-top: 10px; }
@@ -323,9 +323,9 @@ header {
       .skills .skills-grid .git .img {
         background: url("../../assets/images/Git@3x.png") center no-repeat;
         background-size: contain;
-        height: 75%;
+        height: 65%;
         margin: 0 auto;
-        width: 75%; }
+        width: 65%; }
       .skills .skills-grid .git p {
         text-align: center;
         margin-top: 10px; }
@@ -334,9 +334,9 @@ header {
       .skills .skills-grid .bootstrap .img {
         background: url("../../assets/images/Bootstrap@3x.png") center no-repeat;
         background-size: contain;
-        height: 75%;
+        height: 65%;
         margin: 0 auto;
-        width: 75%; }
+        width: 65%; }
       .skills .skills-grid .bootstrap p {
         text-align: center;
         margin-top: 10px; }
@@ -345,9 +345,9 @@ header {
       .skills .skills-grid .gulp .img {
         background: url("../../assets/images/Gulp@3x.png") center no-repeat;
         background-size: contain;
-        height: 75%;
+        height: 65%;
         margin: 0 auto;
-        width: 75%; }
+        width: 65%; }
       .skills .skills-grid .gulp p {
         text-align: center;
         margin-top: 10px; }

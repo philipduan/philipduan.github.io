@@ -18,39 +18,39 @@
     width: 90%;
 
     .html {
-      @include skill-grid('HTML@3x',html);
+      @include skill-grid('HTML',html);
     }
 
     .css {
-      @include skill-grid('CSS@3x',css);
+      @include skill-grid('CSS',css);
     }
 
     .js {
-      @include skill-grid('Javascript@3x',js);
+      @include skill-grid('Javascript',js);
     }
 
     .react {
-      @include skill-grid('React@3x',react);
+      @include skill-grid('React',react);
     }
 
     .wp {
-      @include skill-grid('Wordpress@3x',wp);
+      @include skill-grid('Wordpress',wp);
     }
 
     .jquery {
-      @include skill-grid('JQuery@3x',jquery);
+      @include skill-grid('JQuery',jquery);
     }
 
     .git {
-      @include skill-grid('Git@3x',git);
+      @include skill-grid('Git',git);
     }
 
     .bootstrap {
-      @include skill-grid('Bootstrap@3x',bootstrap);
+      @include skill-grid('Bootstrap',bootstrap);
     }
 
     .gulp {
-      @include skill-grid('Gulp@3x',gulp);
+      @include skill-grid('Gulp',gulp);
     }
 
     @include tablet {
