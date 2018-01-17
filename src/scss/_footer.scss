@@ -5,7 +5,7 @@ footer {
   .grid {
     display: grid;
     grid-column-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     height: 50px;
     margin: 0 auto;
@@ -25,11 +25,19 @@ footer {
     .linkedin {
       @include footer-grid('Linkedin',100%,100%);
     }
+
+    .resume {
+      background: url('../../assets/images/resume.svg') center no-repeat;
+      background-size: contain;
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+    }
   }
 
   @include tablet {
     .grid {
-      width: 50vw;
+      width: 60vw;
     }
   }
 }
