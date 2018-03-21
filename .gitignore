@@ -50,5 +50,4 @@ dest/js/*
 
 # File #
 ######################
-gulpfile.js
 *.pdf
