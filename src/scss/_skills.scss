@@ -9,64 +9,84 @@
     grid-row-gap: 15px;
     grid-template-areas:
       'html css js'
-      'react wp jquery'
-      'git bootstrap gulp';
+      'react jquery git'
+      'materialUI gulp redux'
+      'mongoDB express meteor';
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     height: 90vw;
     margin: 0px auto;
     width: 90%;
 
     .html {
-      @include skill-grid('HTML',html);
+      @include skill-grid('HTML', html);
     }
 
     .css {
-      @include skill-grid('CSS',css);
+      @include skill-grid('CSS', css);
     }
 
     .js {
-      @include skill-grid('Javascript',js);
+      @include skill-grid('Javascript', js);
     }
 
     .react {
-      @include skill-grid('React',react);
-    }
-
-    .wp {
-      @include skill-grid('Wordpress',wp);
+      @include skill-grid('React', react);
     }
 
     .jquery {
-      @include skill-grid('JQuery',jquery);
+      @include skill-grid('JQuery', jquery);
     }
 
     .git {
-      @include skill-grid('Git',git);
+      @include skill-grid('Git', git);
     }
 
-    .bootstrap {
-      @include skill-grid('Bootstrap',bootstrap);
+    .materialUI {
+      @include skill-grid('MaterialUI', materialUI);
     }
 
     .gulp {
-      @include skill-grid('Gulp',gulp);
+      @include skill-grid('Gulp', gulp);
+    }
+
+    .redux {
+      @include skill-grid('Redux', redux);
+    }
+
+    .mongoDB {
+      @include skill-grid('MongoDB', mongoDB);
+    }
+
+    .express {
+      @include skill-grid('Express', express);
+    }
+
+    .meteor {
+      @include skill-grid('Meteor', meteor);
     }
 
     @include tablet {
       grid-template-areas:
         'free html css js free1'
-        'free react wp jquery free1'
-        'free git bootstrap gulp free1';
+        'free react jquery git free1'
+        'free materialUI gulp redux free1'
+        'free mongoDB express meteor free1';
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      height: 3/5*100+vw;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      height: 4/5 * 100 + vw;
       width: 100%;
     }
 
     @include desktop {
-      grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
-      height: 3/7*100+vw;
+      grid-template-areas:
+        'free html css js react free1'
+        'free jquery git materialUI gulp free1'
+        'free  redux mongoDB express meteor free1';
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      height: 4/7 * 100 + vw;
+      width: 100%;
     }
   }
 }

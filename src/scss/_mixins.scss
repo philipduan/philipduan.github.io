@@ -10,7 +10,7 @@
   }
 }
 
-@mixin top-text($size,$gap) {
+@mixin top-text($size, $gap) {
   font-family: Asap;
   font-size: $size;
   letter-spacing: $gap;
@@ -20,7 +20,7 @@
 @mixin skill-grid($name, $area) {
   grid-area: $area;
   .img {
-    background: url('../../assets/images/'+ $name +'@3x.png') center no-repeat;
+    background: url('../../assets/images/'+$name+'@3x.png') center no-repeat;
     background-size: contain;
     height: 65%;
     margin: 0 auto;
@@ -33,7 +33,7 @@
 }
 
 @mixin section-line($number, $height, $width) {
-  background: url('../../assets/images/Lines'+ $number +'@3x.png') center
+  background: url('../../assets/images/Lines'+$number+'@3x.png') center
     no-repeat;
   background-size: 100% 100%;
   height: 0;
@@ -42,11 +42,11 @@
   width: 100%;
 }
 
-@mixin work-project($name,$height,$width) {
+@mixin work-project($name, $height, $width) {
   margin: 0 auto 80px auto;
 
   .img {
-    background: url('../../assets/images/' + $name + '@3x.png') center no-repeat;
+    background: url('../../assets/images/'+$name+'@3x.png') center no-repeat;
     background-size: contain;
     height: 0;
     padding-top: percentage($height / $width);
@@ -62,13 +62,13 @@
     align-items: flex-end;
     display: flex;
     flex-direction: column;
-    height: 35px;
+    height: 50px;
     justify-content: space-around;
   }
 }
 
 @mixin footer-grid($name, $height, $width) {
-  background: url('../../assets/images/' + $name + '@3x.png') center no-repeat;
+  background: url('../../assets/images/'+$name+'@3x.png') center no-repeat;
   background-size: contain;
   display: inline-block;
   height: $height;
