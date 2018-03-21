@@ -5,27 +5,31 @@
     margin-bottom: 50px;
   }
 
+  .boomtown {
+    @include work-project('BoomtownMockup', 426, 709);
+  }
+
   .mars {
-    @include work-project('MarsMockup',1059 ,1707 );
+    @include work-project('MarsMockup', 1059, 1707);
   }
 
   .aloha {
-    @include work-project('AlohaMockup',954 ,1731 );
+    @include work-project('AlohaMockup', 954, 1731);
   }
 
   .bestbuy {
-    @include work-project('BestBuyMockup',1044 ,1686 );
+    @include work-project('BestBuyMockup', 1044, 1686);
   }
 
   .littlepaper {
-    @include work-project('LittlePaperMockup',1077 ,1764 );
+    @include work-project('LittlePaperMockup', 1077, 1764);
   }
 
   @include tablet {
-    width: 3/5*100+vw;
+    width: 3/5 * 100 + vw;
   }
 
   @include desktop {
-    width: 3/7*100+vw;
+    width: 3/7 * 100 + vw;
   }
 }
